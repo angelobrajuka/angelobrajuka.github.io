@@ -32,7 +32,7 @@ function genAsteroids(difficulty) {
 function gsOnCreate(gs) {
     camera = new Camera().setAccel(0.05);;
     handler = new ObjectHandler();
-    handler.gravity = 0;
+    handler.gravity = 9.8/60;
     genAsteroids(10);
 
     playerController = new ObjectController(new PlayerStats(), onPlayerInit, onPlayerTick, onPlayerRender, onPlayerKill);
@@ -50,16 +50,16 @@ function gsOnResume(gs) {
 
 function gsTick(gs) {
     handler.tickObjects();
-    camera.follow();
+    // camera.follow();
     for(var i = 0; i < handler.gameObjects.length; i++) {
         let temp = handler.gameObjects[i];
     }
 }
 
 function gsRender(gs) {
-    camera.transform();
+    // camera.transform();
     handler.renderObjects();
-    camera.transform_();
+    // camera.transform_();
 }
 
 function gsMouseMoved() {

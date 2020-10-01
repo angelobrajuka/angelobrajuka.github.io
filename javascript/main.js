@@ -2,13 +2,12 @@
 
 function preload() {
 	// load sounds
-	soundFormats("mp3");
-	mLoadSound("soundtrack", "mp3");
-	// mLoadSound("glock", 5);
+
 
 	// load images
-	mLoadImage("playerSprite");
 
+
+	// load fonts
 	mLoadFont("space-age");
 }
 
@@ -17,9 +16,9 @@ var gameState, menuState;
 
 function setup() {
 	windowInit(16/9, 1080);
-	g_debugDrawFill.setRGBA(0, 0, 0, 0);
+	g_debugDrawFill.setRGBA(255, 255, 255, 0);
 	g_debugDrawStroke.setRGBA(255, 255, 255, 255);
-	// g_debugDrawPointColor.setRGBA(255, 255, 255, 255);
+	g_debugDrawPointColor.setRGBA(255, 255, 255, 0);
 
 	setKeybind("shoot", 32); // space bar
 	setKeybind("thrust", 38); // up arrow
