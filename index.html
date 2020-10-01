@@ -2,11 +2,64 @@
 <html lang="">
 
 <head>
+	<div id="p5_loading" class="loadingclass">
+		<div class="center-center">
+			<h1>LOADING...</h1>
+		</div>
 
+	</div>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>game</title>
+	<style>
+		.center-center {
+			margin: 0;
+			position: absolute;
+			top: 50%;
+			-ms-transform: translateY(-50%);
+			left:50%;
+			-ms-transform: translateX(-50%);
+			transform: translateY(-50%) translateX(-50%);
+		}
+		
+		@font-face {
+			font-family: "space-age";
+			src: url("res/fonts/space-age.otf") format("opentype");
+		}
+
+		head {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			background: rgb(48, 48, 48);
+			color: rgb(0, 255, 255);
+			font-size: 70px;
+			font-family: space-age;
+		}
+	</style>
+
+	<script src="javascript/p5libs/p5.js"></script>
+	<script src="javascript/p5libs/addons/p5.sound.min.js"></script>
+	<script src="javascript/engine.js"></script>
+
+	<script src="javascript/constants.js"></script>
+	<script src="javascript/playerController.js"></script>
+	<script src="javascript/asteroidController.js"></script>
+	<script src="javascript/laserController.js"></script>
+
+	<script src="javascript/menuState.js"></script>
+	<script src="javascript/gameState.js"></script>
+	<script src="javascript/pausedState.js"></script>
+	<script src="javascript/gameOverState.js"></script>
+	<script src="javascript/main.js"></script>
+	
 </head>
 
 <body>
-	Hello, World!
+	<main>
+	</main>
 </body>
 
 </html>
