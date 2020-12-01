@@ -32,7 +32,7 @@ function genAsteroids(difficulty) {
 function gsOnCreate(gs) {
     camera = new Camera().setAccel(0.05);;
     handler = new ObjectHandler();
-    handler.gravity = 9.8/60;
+    handler.gravity = 0;
     genAsteroids(10);
 
     playerController = new ObjectController(new PlayerStats(), onPlayerInit, onPlayerTick, onPlayerRender, onPlayerKill);
