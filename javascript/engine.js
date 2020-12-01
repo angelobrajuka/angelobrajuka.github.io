@@ -579,7 +579,7 @@ class ObjectController {
 class ObjectHandler {
     constructor() {
         this.gameObjects = [];
-        this.gravity = 0.98;
+        this.gravity = 0;
         this.gravityDirection = 270;
     }
 
